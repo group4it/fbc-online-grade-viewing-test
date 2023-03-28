@@ -182,7 +182,21 @@ hr.h-color{
 
 /* Add Class Modal */
 
-  
+#adcls-modal-dialog{
+    background-color: #eee;
+}
+
+/* popup success */
+
+#Success{
+    align-items: center;
+    justify-content: center;
+}
+
+.chkpic{
+    width: 25%;
+}
+
 
 
 
