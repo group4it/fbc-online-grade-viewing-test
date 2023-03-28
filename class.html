@@ -55,6 +55,11 @@
             
 
             <div class="topcornerdpd dropdown ms-auto">
+                <h5>/My Class/</h5>
+                <button type="button" class="addclasses btn btn-primary">
+                  <a href="" class="text-light text-decoration-none" data-bs-toggle="" data-bs-target="">
+                  <i class="bi bi-arrow-left-square"></i> Back</a>
+                </button>
                 <button class="btn btn-clear dropdown-toggle fs-5" 
                 type="button" 
                 data-bs-toggle="dropdown" 
@@ -74,49 +79,69 @@
         <div class="content m-0">
             <div class="container text-center px-5">
                 <div class="row">
-                  <div class="col-md-1">
-                    <h1 class="d-flex"><i class="bi bi-person-video3"></i><i class="bi bi-plus-circle-fill fs-5"></i></h1>
-                  </div>
-                  <div class="col-md-3 text-start">
-                    <h3 class="profile-name">Create Class</h3>
+                  <div class="col-md-1 px-0">
+                    <h1 class="d-flex"><i class="bi bi-people-fill"></i><Span class="fs-1">Class</Span></h1>
                   </div>
                 </div>
             </div>
-            <hr>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6">
-                  <form id="card-form">
-                    <div class="mb-3">
-                      <label for="card-code" class="form-label">Subject Code</label>
-                      <input type="text" class="form-control" id="card-code" name="card-code" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="card-title" class="form-label">Subject Description</label>
-                      <input type="text" class="form-control" id="card-title" name="card-title" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="card-schedule" class="form-label">Class Schedule <span class="fst-italic fs-6 text-secondary">(Please separate schedule with commas",".)</span></label>
-                      <input type="text" class="form-control" id="card-schedule" name="card-schedule" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="card-course" class="form-label">Course Section <span class="fst-italic fs-6 text-secondary">(e.g. IT4A)</span></label>
-                      <input type="text" class="form-control" id="card-course" name="card-course" required>
-                    </div>
-        
-                    <h7 class="fst-italic fs-6 text-secondary">Please review all entered information before pressing the "Create Class" button.</h7>
-                    <br>
-                    <button type="submit" class="btn btn-primary mt-2">Create Class</button>
-                  </form>
-                </div>
-
-
-
-                <div class="col-lg-6">
-                  <h2>Generated Card</h2>
-                  <div id="card-container"></div>
-                </div>
+            <div class="container mx-auto">
+              <div class="content d-flex pt-4 mx-auto">
+                  <div class="input-group input-group-start m-0 ">
+                      <input type="text" class="form-control" placeholder="Search Student" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <span class="input-group-text bg-primary text-white" id="basic-addon2"><i class="bi bi-search"></i></span>
+                  </div>
+                  <div class="ms-auto">
+                    <button type="button" class="addclasses btn btn-primary">
+                    <a href="" class="text-light text-decoration-none" data-bs-toggle="" data-bs-target="">
+                    <i class="bi bi-person-plus-fill text-light fs-5"></i> Add Student</a>
+                    </button>
+                    <button type="button" class="addclasses btn btn-danger">
+                      <a href="" class="text-light text-decoration-none" data-bs-toggle="" data-bs-target="">
+                      <i class="bi bi-person-x-fill text-light fs-5"></i> Remove Student</a>
+                    </button>
+                    <button type="button" class="addclasses btn btn-secondary">
+                      <a href="" class="text-light text-decoration-none" data-bs-toggle="" data-bs-target="">
+                      <i class="bi bi-trash3 text-light fs-5"></i> Delete Class</a>
+                    </button>
+                  </div>
               </div>
+              <hr>
+            
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1091010040</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>1091010040</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>1091010040</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
     </div>
@@ -131,52 +156,7 @@
           $(this).addClass('active');
         })
       </script>
-      <script>
-        // Get the card form and card container
-        const cardForm = document.querySelector('#card-form');
-        const cardContainer = document.querySelector('#card-container');
-
-        // Add an event listener to the card form submission
-        cardForm.addEventListener('submit', (e) => {
-          // Prevent the default form submission behavior
-          e.preventDefault();
-
-          // Get the values from the card form
-          const cardCode = cardForm['card-code'].value;
-          const cardTitle = cardForm['card-title'].value;
-          const cardSchedule = cardForm['card-schedule'].value;
-          const cardCourse = cardForm['card-course'].value;
-
-          // Generate the card HTML with the input values
-          const cardHTML = `
-            <a class="card text-decoration-none" href="">
-              <div class="shadow bg-primary rounded-4">
-                <div class="card-title text-light text-center mt-2">
-                  <h5 class="bg-primary rounded-2">${cardCode}</h5>
-                  <h6>${cardTitle}</h6>
-                </div>
-                <div class="card-body bg-light rounded-4 p-3 px-4 mt-2">
-                  <div class="schedule text-black">
-                    <h6>${cardSchedule}</h6>
-                  </div>
-                  <hr>
-                  <div class="d-flex">
-                    <div class="viewclasses btn btn-warning px-2"><i class="bi bi-people-fill"></i> 5</div>
-                      <h5 class="course-section-code mx-3 text-black">${cardCourse}</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>                  
-            </a>
-          `;
-
-          // Clear the card form input values
-          cardForm.reset();
-
-          // Add the generated card HTML to the card container
-          cardContainer.insertAdjacentHTML('beforeend', cardHTML);
-        });
-      </script>
+      
 
 </body>
 </html>
