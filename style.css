@@ -186,6 +186,12 @@ hr.h-color{
     background-color: #eee;
 }
 
+/* Add Student Modal */
+
+#adstdnt-modal-dialog{
+    background-color: #eee;
+}
+
 /* popup success */
 
 #Success{
@@ -197,6 +203,14 @@ hr.h-color{
     width: 25%;
 }
 
+#Successful{
+    align-items: center;
+    justify-content: center;
+}
+
+.chkpic{
+    width: 25%;
+}
 
 
 
