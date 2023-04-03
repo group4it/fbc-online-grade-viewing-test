@@ -218,6 +218,35 @@ hr.h-color{
     width: 150px;
 }
 
+/* teach class student profile navbar*/
+
+#logostdntprofile{
+    margin-left: 25px;
+}
+
+/* teach class student profile navbar*/
+
+#conteachclasstdnprofile{
+    padding-left: 0;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+ 
+.profile-picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
+
+
+
 
 @media(max-width: 768px){
     #side_nav{
