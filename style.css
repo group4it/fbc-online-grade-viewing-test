@@ -245,7 +245,9 @@ hr.h-color{
     /* border-radius: 50%; */
 }
 
-
+.dropdown-item{
+    padding-left: 0;
+}
 
 
 @media(max-width: 768px){
@@ -285,6 +287,10 @@ hr.h-color{
         display: none;
     }
 
+    .profile-picture{
+        margin-bottom: 30px;
+
+    }
 }
 
 
