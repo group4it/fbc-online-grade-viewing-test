@@ -212,7 +212,11 @@ hr.h-color{
     width: 25%;
 }
 
+/* add Student */
 
+.adstdntlabes{
+    width: 150px;
+}
 
 
 @media(max-width: 768px){
@@ -239,6 +243,18 @@ hr.h-color{
     /* .content1{
         align-items: center;
     } */
+
+    .buttons{
+        display: flex;
+    }
+
+    .plusStudent{
+        display: none;
+    }
+
+    .delStudent{
+        display: none;
+    }
 
 }
 

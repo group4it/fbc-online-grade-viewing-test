@@ -1,0 +1,99 @@
+<!--ADD STUDENT MODAL-->
+
+<div class="modal fade" id="adstdnt" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" id="adstdnt-modal-dialog">
+            <div class="modal-header bg-primary text-light">
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="addicon col">
+                        <h1 class="d-flex"><i class="bi bi-person-rolodex fs-2"></i><i class="bi bi-plus-circle-fill fs-6"></i><span class="fs-2">Add Student</span></h1>
+                      </div>
+                    </div>
+                </div>
+                <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <form id="card-form">
+                          <div class="mb-3">
+                            <label for="card-code" class="form-label">Identification No.</label>
+                            <input type="number" class="form-control" id="idno" name="IDnumber" required>
+                          </div>
+
+                          <div class="mb-3">
+                            <table class="d-flex">
+                              <thread>
+                                <tr class="row form-label fs-6 text-secondary">
+                                  <th scope="row">First Name:</th>
+                                  <th scope="row">Middle Name:</th>
+                                  <th scope="row">Last Name:</th>
+                                  <th scope="row">Date of Birth:</th>
+                                  <th scope="row">Course:</th>
+                                  <th scope="row">Section:</th>
+                                </tr>
+                              </thread>
+                              <tbody id="stdnInfo">
+                                <tr class="row">
+                                  <td id="firstName">sample</td>
+                                  <td id="firstName">sample</td>
+                                  <td id="firstName">sample</td>
+                                  <td id="firstName">sample</td>
+                                  <td id="firstName">sample</td>
+                                  <td id="firstName">sample</td>
+                                </tr>
+                              </tbody> 
+                            </table>
+                          </div>
+
+                          <div class="mb-3">
+                            <h6><label for="card-fname" class="form-label text-secondary">First Name:
+                              <span class="text-dark" id="firstname" name="firstname">
+                                Name here
+                              </span>
+                            </label></h6>
+                            <h6><label for="card-midname" class="form-label text-secondary">Middle Name:
+                              <span class="text-dark" id="midname" name="midname">
+                                Middle Name here
+                              </span>
+                            </label></h6>
+                            <h6><label for="card-surname" class="form-label text-secondary">Surename:
+                              <span class="text-dark" id="surename" name="surename">
+                                Surename here
+                              </span>
+                            </label></h6>
+                            <h6><label for="card-dob" class="form-label text-secondary">Date of Birth:
+                              <span class="text-dark" id="surename" name="surename">
+                                Date of Birth here
+                              </span>
+                            </label></h6>
+
+                          </div>
+                          <div class="mb-3">
+                            <label for="card-title" class="form-label">First Name</label>
+                            <input  required>
+                          </div>
+                          <div class="mb-3">
+                            <div class="mb-3">
+                              <label for="card-title" class="form-label">Middle Name</label>
+                              <input type="text" class="form-control" id="middle-name" name="middle-name" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="card-schedule" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" name="last-name" required>
+                          </div>
+
+                          <h7 class="fst-italic fs-6 text-secondary">Please review all entered information before pressing the "Add" button.</h7>
+                          <br>
+                          <div class="press d-flex flex-row-reverse mt-4 mb-2">
+                            <button type="submit" class="btn btn-primary fs-5"><span class="mx-2">Add</span></button>
+                            <button type="button" class="btn btn-info mx-2 fs-5" data-bs-dismiss="modal"><span class="mx-2 text-light">Cancel</span></button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>

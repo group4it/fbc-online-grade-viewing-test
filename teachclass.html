@@ -92,14 +92,14 @@
                       <input type="text" class="form-control" placeholder="Search Student" aria-label="Recipient's username" aria-describedby="basic-addon2">
                       <span class="input-group-text bg-primary text-white" id="basic-addon2"><i class="bi bi-search"></i></span>
                   </div>
-                  <div class="ms-auto">
-                    <button type="button" class="addclasses btn btn-primary">
+                  <div class="buttons ms-auto">
+                    <button type="button" class="addclasses btn btn-primary mx-2">
                     <a href="" class="nav-link text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#adstdnt">
-                    <i class="bi bi-person-plus-fill text-light fs-5"></i> Add Student</a>
+                    <i class="bi bi-person-plus-fill text-light fs-5"></i><span class="plusStudent"> Add Student</span></a>
                     </button>
                     <button type="button" class="addclasses btn btn-secondary">
                       <a href="" class="text-light text-decoration-none" data-bs-toggle="" data-bs-target="">
-                      <i class="bi bi-trash3 text-light fs-5"></i> Delete Class</a>
+                      <i class="bi bi-trash3 text-light fs-5"></i><span class="delStudent"> Delete Class</span></a>
                     </button>
                   </div>
               </div>
@@ -113,9 +113,8 @@
                     <th scope="col">ID</th>
                     <th scope="col">First</th>
                     <th scope="col">Last</th>
-                    <th scope="col">Grade</th>
-                    <th scope="col">View Profile</th>
-                    <th scope="col">Add Grade</th>
+                    <th scope="col">Grading</th>
+                    <th scope="col">Profile</th>
                     <th scope="col">Delete</th>
                   </tr>
                 </thead>
@@ -125,20 +124,18 @@
                     <td>1091010040</td>
                     <td>Mak Bert</td>
                     <td>Ganacias</td>
-                    <td>95</td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-primary rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                        </button>
+                    </td>
                     <td>
                       <button type="button" class="deletestdnt btn btn-warning rounded-4">
                         <a href="" class="" data-bs-toggle="modal" data-bs-target="">
                         <i class="bi bi-person-rolodex text-dark "></i></a>
                         </button>
                     </td>
-                    <td>
-                      <button type="button" class="deletestdnt btn btn n-primary rounded-4">
-                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                        <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
-                        </button>
-                    </td>
-                    
                     <td>
                       <button type="button" class="deletestdnt btn btn-secondary rounded-4">
                       <a href="" class="" data-bs-toggle="modal" data-bs-target="">
@@ -152,17 +149,16 @@
                     <td>1091010040</td>
                     <td>Ralph</td>
                     <td>Bernas</td>
-                    <td>95</td>
-                    <td>
-                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
-                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                        <i class="bi bi-person-rolodex text-dark "></i></a>
-                        </button>
-                    </td>
                     <td>
                       <button type="button" class="deletestdnt btn btn-primary rounded-4">
                         <a href="" class="" data-bs-toggle="modal" data-bs-target="">
                         <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                        </button>
+                    </td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-person-rolodex text-dark "></i></a>
                         </button>
                     </td>
                     <td>
@@ -177,17 +173,16 @@
                     <td>1091010040</td>
                     <td>JJared</td>
                     <td>Lim</td>
-                    <td>95</td>
-                    <td>
-                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
-                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                        <i class="bi bi-person-rolodex text-dark "></i></a>
-                        </button>
-                    </td>
                     <td>
                       <button type="button" class="deletestdnt btn btn-primary rounded-4">
                         <a href="" class="" data-bs-toggle="modal" data-bs-target="">
                         <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                        </button>
+                    </td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-person-rolodex text-dark "></i></a>
                         </button>
                     </td>
                     <td>
@@ -202,6 +197,44 @@
             </div>
           </div>
     </div>
+
+    <!-- Are you sure? MODAL -->
+
+    <div class="modal pt-5" id="areYouSure" tabindex="-1">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="chkpic position-absolute top-0 start-50 translate-middle fs-5" src="img/warning.png" alt="">
+              <div class="text-center mt-5">
+                  <h1>Warning!</h1>
+                  <p>Are you sure you want to DELETE this class?</p>
+                  <div>
+                    <button type="button" class="btn btn-Secondary" data-bs-dismiss="modal"><span class="mx-5">Yes</span></button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-target=""><span class="mx-5">Yes</span></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Successfully added modal -->
+
+    <div class="modal pt-5" id="Successful" tabindex="-1">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content rounded-4 mt-5">
+          <div class="modal-body">
+              <img class="chkpic position-absolute top-0 start-50 translate-middle fs-5" src="img/check.png" alt="">
+              <div class="text-center mt-5">
+                  <h1>Great!</h1>
+                  <p>Student has been successfully<br>added to your class!</p>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><span class="mx-5">OK</span></button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
 
     <!--ADD STUDENT MODAL-->
 
@@ -227,21 +260,32 @@
                               <label for="card-code" class="form-label">Identification No.</label>
                               <input type="number" class="form-control" id="idno" name="IDnumber" required>
                             </div>
-                            <div class="mb-3">
-                              <label for="card-title" class="form-label">First Name</label>
-                              <input type="text" class="form-control" id="first-name" name="first-name" required>
-                            </div>
-                            <div class="mb-3">
-                              <div class="mb-3">
-                                <label for="card-title" class="form-label">Middle Name</label>
-                                <input type="text" class="form-control" id="middle-name" name="middle-name" required>
-                              </div>
-                              <div class="mb-3">
-                              <label for="card-schedule" class="form-label">Last Name</label>
-                              <input type="text" class="form-control" id="last-name" name="last-name" required>
-                            </div>
 
-                            <h7 class="fst-italic fs-6 text-secondary">Please review all entered information before pressing the "Add" button.</h7>
+                            <div class="mb-3">
+                              <table class="d-flex">
+                                <thread>
+                                  <tr class="adstdntlabes row form-label text-secondary">
+                                    <th>First Name:</th>
+                                    <th>Middle Name:</th>
+                                    <th>Last Name:</th>
+                                    <th>Date of Birth:</th>
+                                    <th>Course:</th>
+                                    <th>Section:</th>
+                                  </tr>
+                                </thread>
+                                <tbody id="stdnInfo">
+                                  <tr class="row text-dark">
+                                    <td id="firstName">sample</td>
+                                    <td id="firstName">sample</td>
+                                    <td id="firstName">sample</td>
+                                    <td id="firstName">sample</td>
+                                    <td id="firstName">sample</td>
+                                    <td id="firstName">sample</td>
+                                  </tr>
+                                </tbody> 
+                              </table>
+                            </div>
+                            <h7 class="fst-italic fs-6 text-secondary">Please review all information before adding the student.</h7>
                             <br>
                             <div class="press d-flex flex-row-reverse mt-4 mb-2">
                               <button type="submit" class="btn btn-primary fs-5"><span class="mx-2">Add</span></button>
@@ -255,23 +299,6 @@
       </div>
 
 
-      <!-- Successfully added modal -->
-
-
-      <div class="modal pt-5" id="Successful" tabindex="-1">
-        <div class="modal-dialog modal-dialog-center">
-          <div class="modal-content rounded-4 mt-5">
-            <div class="modal-body">
-                <img class="chkpic position-absolute top-0 start-50 translate-middle fs-5" src="img/check.png" alt="">
-                <div class="text-center mt-5">
-                    <h1>Great!</h1>
-                    <p>Student has been successfully<br>added to your class!</p>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><span class="mx-5">OK</span></button>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>    
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -282,6 +309,8 @@
           $(".sidebar ul li.active").removeClass('active');
           $(this).addClass('active');
         })
+
+   
       </script>
       <script>
         // Get the card form and card container
@@ -305,17 +334,16 @@
                     <td>${cellNumber}</td>
                     <td>${cellFirstName}</td>
                     <td>${cellLastName}</td>
-                    <td>0</td>
-                    <td>
-                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
-                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                        <i class="bi bi-person-rolodex text-dark "></i></a>
-                        </button>
-                    </td>
                     <td>
                       <button type="button" class="deletestdnt btn btn-primary rounded-4">
                         <a href="" class="" data-bs-toggle="modal" data-bs-target="">
                         <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                        </button>
+                    </td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-person-rolodex text-dark "></i></a>
                         </button>
                     </td>
                     <td>
@@ -338,9 +366,13 @@
         
         // Close the modal
         $('#adstdnt').modal('hide').on('hidden.bs.modal', function(){
-            $('#Successful').modal('show');
+           
+          $('#Successful').modal('show');
             });
+       
         });
+     
+     
       </script>
 </body>
 </html>
