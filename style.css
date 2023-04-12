@@ -249,6 +249,9 @@ hr.h-color{
     padding-left: 0;
 }
 
+.show-items{
+    max-width: 200px;
+}
 
 @media(max-width: 768px){
     #side_nav{
