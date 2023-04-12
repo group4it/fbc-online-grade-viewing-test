@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullbright College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar-container bg-primary">
+        <div class="sidebar sidebar-expand-lg " id="side_nav">
+            <div class="header-box px-5 pt-5 pb-0">
+              <div class="logo px-5 py-0 pb-4">
+                <img src="img/logo.png" alt="logo">
+              </div>
+            </div>
+
+            <ul class="list-unstyled fs-5 px-3">
+                <li class=""><a href="student.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-house-door"></i></i> Dashboard</a></li>
+                <li class="active"><a href="myprofile.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person"></i> My Profile</a></li>
+                <li class=""><a href="myclasses.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person-video3"></i> My Classes</a></li>
+            </ul>
+
+            <hr class="h-color mx-2">
+
+            <ul class="list-unstyled fs-5 px-3">
+                <li class=""><a href="settings.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-gear"></i> Settings</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-main text-center text-sm-start">
+        <div class="navbar">
+            <img src="img/logo.png" alt="" class="logo-sm d-md-none px-2">
+            <h1 class="logo-name fs-3 d-md-none">Fullbright College</h1>
+            <div class="bar dropdown ms-auto">
+                <button class="navbar-toggler d-md-none" 
+                type="button" 
+                data-bs-toggle="dropdown" 
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    <ul class="dropdown-menu dropdown-menu-end rounded-3 fs-6 py-3">
+                        <li class=""><a href="student.html" class="dropdown-item text-decoration-none px-5 py-4"><i class="bi bi-house-door"></i></i> Dashboard</a></li>
+                        <li class=""><a href="myprofile.html" class="dropdown-item text-decoration-none px-5 py-4"><i class="bi bi-person"></i> My Profile</a></li>
+                        <li class=""><a href="myclasses.html" class="dropdown-item text-decoration-none px-5 py-4"><i class="bi bi-person-video3"></i> My Classes</a></li>
+                        <li class=""><a href="index.html" class="dropdown-item text-decoration-none px-5 py-4"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
+                        <li class=""><a href="#" class="dropdown-item text-decoration-none px-5 py-4"><i class="bi bi-question-diamond"></i> Help</a></li>
+                        <li class=""><a href="settings.html" class="dropdown-item text-decoration-none px-5 py-4"><i class="bi bi-gear"></i> Settings</a></li>
+                    </ul>
+            </div>
+            
+
+            <div class="topcornerdpd dropdown ms-auto">
+                <button class="btn btn-clear dropdown-toggle fs-5" 
+                type="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false"
+                >
+                <i class="bi bi-person-circle"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="myprofile.html"><i class="bi bi-person"></i> My Profile</a></li>
+                  <li><a class="dropdown-item" href="index.html"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-question-diamond"></i> Help</a></li>
+                  <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i> Settings</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="content">
+            <div class="container text-center px-5">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="img/person-placeholder.jpg" alt="" class="profile-pic shadow rounded-5 wrapper">
+                  </div>
+                  <div class="col-6 col-md-5">
+                    <h2 class="profile-name text-start">Ralph Ayala Bernas</h2>
+                    <h4 class="idNo text-start">1901010040</h4>
+                  </div>
+                  <div class="col-md-3 text-start">
+                    <button class="updateinfo btn bg-info bg-gradient"><a href="#" class="text-decoration-none text-white">Update profile <i class="bi bi-pencil-square"></i></a></button>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-7 col-md-5">
+                      <p class="course text-start mb-0"><span class="fs-5 text-secondary">Course: </span>BS Information Technology</p>
+                      <p class="year-level text-start mb-0"><span class="fs-5 text-secondary">Year Level: </span>4th Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content pt-4">
+            <div class="container px-5">
+                <div class="row">
+                  <div class="col-md">
+                    <h5 class="Personal-info text-start">PERSONAL INFORMATION</span></h5>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="info-lables col text-end text-secondary-emphasis">
+                        <h6>Civil Status:</h6>
+                        <h6>Date of Birth:</h6>
+                        <h6>Nationality:</h6>
+                        <h6>Religion:</h6>
+                        <h6>Corporate Email:</h6>
+                    </div>
+                    <div class="info-lables col text-start text-black">
+                        <h6 id="civil-status">Double</h6>
+                        <h6 id="date-of-birth">Birthday here</h6>
+                        <h6 id="nationality">Filipino</h6>
+                        <h6 id="religion">Christian</h6>
+                        <h6 id="corporate-email">ralphb123@gmail.com</h6>
+                    </div>
+                
+                    <!--next column info-->
+
+                    <div class="info-lables col text-end text-secondary-emphasis">
+                        <h6>Gender:</h6>
+                        <h6>With Disability:</h6>
+                        <h6>Height:</h6>
+                        <h6>Mobile Phone No.:</h6>
+                        <h6>Socio Economic Status:</h6>
+                    </div>
+                    <div class="info-lables col text-start text-black">
+                        <h6 id="gender">Male</h6>
+                        <h6 id="with-dis">None</h6>
+                        <h6 id="height">6'</h6>
+                        <h6 id="moblie-no">09000000000</h6>
+                        <h6 id="social-stats">Rich ked</h6>
+                    </div>
+
+                    <!--next row/level Current/Mailing Address info-->
+
+                    <div class="row pt-4">
+                        <div class="col-md">
+                          <h6 class="Personal-info text-start">CURRENT/MAILING ADDRESS</span></h6>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="info-lables col text-end text-secondary-emphasis">
+                              <h6>Country:</h6>
+                              <h6>Region:</h6>
+                              <h6>Province:</h6>
+                              <h6>Town/City</h6>
+                          </div>
+                          <div class="info-lables col text-start text-black">
+                              <h6 id="country">Philippines</h6>
+                              <h6 id="region">MIMAROPA Region</h6>
+                              <h6 id="province">Palawan</h6>
+                              <h6 id="town-city">City of Puerto Princesa (Capital)</h6>
+                          </div>
+                      
+                          <!--next column info-->
+      
+                          <div class="info-lables col text-end text-secondary-emphasis">
+                              <h6>Barangay:</h6>
+                              <h6>Street:</h6>
+                              <h6>Residence:</h6>
+                              <h6>Zip Code:</h6>
+                          </div>
+                          <div class="info-lables col text-start text-black">
+                              <h6 id="brgy">Irawan char lng</h6>
+                              <h6 id="st">Sampalok</h6>
+                              <h6 id="residence">29272</h6>
+                              <h6 id="zipc">5300</h6>
+                          </div>
+
+                          <!--next row/level Permanent Address info-->
+
+                    <div class="row pt-4 pb-4">
+                        <div class="col-md">
+                          <h6 class="Personal-info text-start">PERMANENT ADDRESS</span></h6>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="info-lables col text-end text-secondary-emphasis">
+                              <h6>Country:</h6>
+                              <h6>Region:</h6>
+                              <h6>Province:</h6>
+                              <h6>Town/City</h6>
+                          </div>
+                          <div class="info-lables col text-start text-black">
+                              <h6 id="country">Philippines</h6>
+                              <h6 id="region">MIMAROPA Region</h6>
+                              <h6 id="province">Palawan</h6>
+                              <h6 id="town-city">City of Puerto Princesa (Capital)</h6>
+                          </div>
+                      
+                          <!--next column info-->
+      
+                          <div class="info-lables col text-end text-secondary-emphasis">
+                              <h6>Barangay:</h6>
+                              <h6>Street:</h6>
+                              <h6>Residence:</h6>
+                              <h6>Zip Code:</h6>
+                          </div>
+                          <div class="info-lables col text-start text-black">
+                              <h6 id="brgy">Irawan char lng</h6>
+                              <h6 id="st">Sampalok</h6>
+                              <h6 id="residence">29272</h6>
+                              <h6 id="zipc">5300</h6>
+                          </div>
+                  </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>  
+
+      <script>
+        $(".sidebar ul li").on('click' , function(){
+          $(".sidebar ul li.active").removeClass('active');
+          $(this).addClass('active');
+        })
+ 
+      </script>
+
+</body>
+</html>
