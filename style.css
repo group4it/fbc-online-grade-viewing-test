@@ -253,6 +253,23 @@ hr.h-color{
     max-width: 200px;
 }
 
+#sexdrpselec{
+    max-width: 30%;
+}
+
+#secselec{
+    max-width: 84%;
+}
+
+#corscod{
+    max-width: 84%;
+}
+
+#sufselec{
+    max-width: 25%;
+}
+
+
 @media(max-width: 768px){
     #side_nav{
         margin-left: -300px;
