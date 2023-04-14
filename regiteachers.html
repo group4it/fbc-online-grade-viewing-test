@@ -21,19 +21,27 @@
               </div>
             </div>
 
-            <ul class="list-unstyled fs-5 px-3">
-                <li class=""><a href="regisacc.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-house-door"></i></i> Dashboard</a></li>
-                <li class=""><a href="registudents.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person"></i></i> Students</a></li>
-                <li class="active"><a href="regiteachers.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person-video3"></i> Teachers</a></li>
-                <li class=""><a href="regisubjects.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-book"></i> Subject</a></li>
-                <li class=""><a href="regiscourse.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person-video3"></i> Course</a></li>
-            </ul>
+            <ul class="list-unstyled fs-6 px-3">
+              <li class=""><a href="regisacc.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-house-door"></i></i> Dashboard</a></li>
+              <li class=""><a href="registudents.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-people"></i></i> Students</a></li>
+              <li class="active"><a href="regiteachers.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person-video3"></i> Teachers</a></li>
+              <li class=""><a href="regisubjects.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-book"></i> Subjects</a></li>
+              <li class=""><a href="regiscourse.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-building-fill"></i> Courses & Departments</a></li>
+              
+          </ul>
+          </ul>
 
-            <hr class="h-color mx-2">
+          <hr class="h-color mx-2">
 
-            <ul class="list-unstyled fs-5 px-3">
+          <ul class="list-unstyled fs-6 px-3">
+            <li class=""><a href="regisgrading.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-bar-chart-line"></i> Examination Grading</a></li>
+          </ul>
+
+          <hr class="h-color mx-2">
+
+          <ul class="list-unstyled fs-6 px-3">
               <li class=""><a href="regimyprofile.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-person-badge"></i> My Profile</a></li>
-                <li class=""><a href="settings.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-gear"></i> Settings</a></li>
+                <li class=""><a href="regissettings.html" class="text-decoration-none px-4 py-2 d-block"><i class="bi bi-gear"></i> Settings</a></li>
             </ul>
         </div>
     </div>
@@ -67,7 +75,7 @@
                 >
                 <i class="bi bi-person-circle"></i>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end">
+                <ul class="dropdown-menu dropdown-menu-end px-3">
                   <li><a class="dropdown-item" href="teachmyprofile.html"><i class="bi bi-person"></i> My Profile</a></li>
                   <li><a class="dropdown-item" href="index.html"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
                   <li><a class="dropdown-item" href="teachhelpin.html"><i class="bi bi-question-diamond"></i> Help</a></li>
@@ -98,9 +106,17 @@
                           <label for="" class="form-label">Faculty number</label>
                           <input type="number" class="form-control" id="">
                         </div>
-                        <div class="col input-group-sm mb-3">
+                        <div class="col-5 input-group-sm mb-2">
                           <label for="" class="form-label">Department</label>
-                          <input type="text" class="form-control" id="">
+                          <div class="input-group mb-2">
+                            <select name="drpdntyp" id="" for="validationDefault01" class="form-select form-select-sm" required>
+                              <option value="" id="validationDefault01" disable selected hidden></option>
+                              <option value="IT1A">ECT</option>
+                              <option value="IT2A">EDUC</option>
+                              <option value="IT3A">HRS</option>
+                              <option value="IT4A">BUSINESS</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="row mx-2">
@@ -117,9 +133,15 @@
                             <label for="" class="form-label">Last Name</label>
                           <input type="text" class="form-control" id="">
                           </div>
-                          <div class="col-2 input-group-sm mx-1">
+                          <div class="col-2 input-group-sm mx-2">
                             <label for="" class="form-label">Suffix</label>
-                            <input type="text" class="form-control" id="">
+                            <div class="input-group mb-2">
+                              <select name="drpdntyp" id="sufselec" for="validationDefault01" class="form-select form-select-sm" required>
+                                <option value="bsit" id="validationDefault01" disable selected hidden></option>
+                                <option value="Jr.">Jr.</option>
+                                <option value="">none</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -132,22 +154,20 @@
                           <label for="" class="form-label">Contact number</label>
                           <input type="number" class="form-control" id="">
                         </div>
-                        <div class="col d-flex mb-3">
+                        <div class="col-4 d-flex mb-3">
                           <div class="col input-group-sm">
                             <label for="" class="form-label">Date of Birth</label>
                             <input type="Date" class="form-control" id="">
                           </div>
-                          <div class="col input-group-sm mx-2">
+                                                    <div class="col-4 input-group-sm mx-2">
                             <label for="" class="form-label">Sex</label>
-                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                              <button class="btn btn-clear dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                              <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                              </ul>
+                            <div class="input-group mb-2">
+                              <select name="drpdntyp" id="sexdrpselec" for="validationDefault01" class="form-select form-select-sm" required>
+                                <option value="bsit" id="validationDefault01" disable selected hidden></option>
+                                <option value="Male">Male</option>
+                                <option value="Femal">Female</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
