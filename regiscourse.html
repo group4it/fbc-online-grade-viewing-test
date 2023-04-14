@@ -88,190 +88,210 @@
             <div class="container text-center px-5">
                 <div class="row">
                     <div class="col-md-1">
-                        <h1><i class="bi bi-people-fill"></i></h1>
+                        <h1><i class="bi bi-building-fill"></i></h1>
                     </div>
                     <div class="col text-start">
-                        <h3 class="profile-name">Students</h3>
+                        <h3 class="profile-name">Courses & Departments</h3>
                     </div>
                 </div>
             </div>
 
+            
             <div class="container pt-4">
-                <div class="container-box shadow text-sm-start bg-light rounded-4 mx-3 mx-auto-lg">
-                    <h4 class="bg-info text-light py-2 rounded-top-4"><span class="mx-4"><i class="bi bi-database-add"></i> Add New Student</span></h4>
+                <div class="container-box shadow text-sm-start bg-light rounded-4 mx-4 mx-auto-lg">
+                    <h4 class="bg-info text-light py-2 rounded-top-4">
+                      <span class="mx-4"><i class="bi bi-database-add"></i> Add Course</span></h4>
 
                     <form class="mx-3 fs-6 fw-light">
-                      <div class="row mx-2">
-                        <div class="col-4 input-group-sm mb-3">
-                          <label for="" class="form-label">Student number</label>
+                      <div class="row mx-1">
+                        <div class="col-3 input-group-sm mb-2">
+                          <label for="" class="form-label">Course code</label>
                           <input type="number" class="form-control" maxlength="10" max="9999999999" id="" required>
                         </div>
-                        <div class="col-4 input-group-sm mb-2">
-                          <label for="" class="form-label">Course code</label>
-                          <div class="input-group mb-2">
-                            <select name="drpdntyp" id="corscod" for="validationDefault01" class="form-select form-select-sm" required>
-                              <option value="" id="validationDefault01" disable selected hidden></option>
-                              <option value="it1a">IT1A</option>
-                              <option value="it2a">IT2A</option>
-                              <option value="it3a">IT3A</option>
-                              <option value="it4a">IT4A</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-4 input-group-sm mb-2">
-                          <label for="" class="form-label">Section</label>
-                          <div class="input-group mb-2">
-                            <select name="drpdntyp" id="secselec" for="validationDefault01" class="form-select form-select-sm" required>
-                              <option value="" id="validationDefault01" disable selected hidden></option>
-                              <option value="IT1A">IT1A</option>
-                              <option value="IT2A">IT2A</option>
-                              <option value="IT3A">IT3A</option>
-                              <option value="IT4A">IT4A</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mx-2">
-                        <div class="col input-group-sm mb-3">
-                          <label for="" class="form-label">First Name</label>
+                        <div class="col input-group-sm mb-2">
+                          <label for="" class="form-label">Course Title</label>
                           <input type="text" class="form-control" id="" required>
                         </div>
-                        <div class="col input-group-sm mb-3">
-                          <label for="" class="form-label">Middle Name</label>
-                          <input type="text" class="form-control" id="" required>
-                        </div>
-                        <div class="col d-flex mb-3">
-                          <div class="col input-group-sm">
-                            <label for="" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="" required>
-                          </div>
-                          <div class="col-2 input-group-sm mx-2">
-                            <label for="" class="form-label">Suffix</label>
-                            <div class="input-group mb-2">
-                              <select name="drpdntyp" id="sufselec" for="validationDefault01" class="form-select form-select-sm" required>
-                                <option value="bsit" id="validationDefault01" disable selected hidden></option>
-                                <option value="Jr.">Jr.</option>
-                                <option value="">none</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
                       </div>
-                      <div class="row mx-2">
+                      <div class="row mx-1">
                         <div class="col input-group-sm mb-3">
-                          <label for="" class="form-label">Email address</label>
+                          <label for="" class="form-label">Description</label>
                           <input type="email" class="form-control" id="" required>
                         </div>
-                        <div class="col input-group-sm mb-3">
-                          <label for="" class="form-label">Contact number</label>
-                          <input type="number" class="form-control" maxlength="11" max="99999999999" id="" required>
-                        </div>
-                        <div class="col-4 d-flex mb-3">
-                          <div class="col input-group-sm">
-                            <label for="" class="form-label">Date of Birth</label>
-                            <input type="Date" class="form-control" id="" required>
-                          </div>
-                          <div class="col-4 input-group-sm mx-2">
-                            <label for="" class="form-label">Sex</label>
-                            <div class="input-group mb-2">
-                              <select name="drpdntyp" id="sexdrpselec" for="validationDefault01" class="form-select form-select-sm" required>
-                                <option value="bsit" id="validationDefault01" disable selected hidden></option>
-                                <option value="Male">Male</option>
-                                <option value="Femal">Female</option>
-                              </select>
-                            </div>
-                          </div>
-                      </div>
                       <div class="row mx-2 pb-3">
                         <div class="col">
-                          <p class="fst-italic">Please review carfully each information 
-                            before adding the student!</p>
+                          <p class="fst-italic">Please review carefully each information 
+                            before adding Course!</p>
                         </div>
                         <div class="col d-flex flex-row-reverse">
-                          <button type="submit" class="btn btn-primary">Add Student</button>
+                          <button type="submit" class="btn btn-primary">Add Course</button>
                           <button type="clear" class="btn btn-secondary mx-2">Clear</button> 
                         </div>
                       </div>
                     </form>
                 </div>
-            </div>        
-            
+            </div>
+
+            <div class="container-box shadow text-sm-start bg-white rounded-4 mx-3 mt-4 mb-5 mx-auto-lg">
+                <h4 class="bg-info text-light text-center py-2 rounded-top-4">All Courses</h4>
+                <div class="container pb-3">
+                        <table class="table display" id="myTable">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Code</th>
+                              <th scope="col">TItle</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tbl-container">
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>BSIT</td>
+                              <td>Bachelor of Science in Information Technology</td>
+                               <td>
+                                <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                                  <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
+                                  <i class="bi bi-folder text-dark "></i></a>
+                                </button>
+                                <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                                <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                                <i class="bi bi-trash3 text-light"></i></a>
+                                </button>
+                              </td>
+                                
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>BSIT</td>
+                              <td>Bachelor of Science in Information Technology</td>
+                               <td>
+                                <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                                  <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
+                                  <i class="bi bi-folder text-dark "></i></a>
+                                </button>
+                                <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                                <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                                <i class="bi bi-trash3 text-light"></i></a>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>BSIT</td>
+                              <td>Bachelor of Science in Information Technology</td>
+                               <td>
+                                <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                                  <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
+                                  <i class="bi bi-folder text-dark "></i></a>
+                                </button>
+                                <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                                <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                                <i class="bi bi-trash3 text-light"></i></a>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                </div>
+            </div>
+
+            <hr>
+
+              <div class="container pt-4">
+                <div class="container-box shadow text-sm-start bg-light rounded-4 mx-3 mx-auto-lg">
+                    <h4 class="bg-info text-light py-2 rounded-top-4">
+                      <span class="mx-4"><i class="bi bi-database-add"></i> Add Department</span></h4>
+  
+                    <form class="mx-3 fs-6 fw-light">
+                      <div class="row mx-1">
+                        <div class="col-3 input-group-sm mb-2">
+                          <label for="" class="form-label">Dept. code</label>
+                          <input type="number" class="form-control" maxlength="10" max="9999999999" id="" required>
+                        </div>
+                        <div class="col input-group-sm mb-2">
+                          <label for="" class="form-label"> Department Title</label>
+                          <input type="text" class="form-control" id="" required>
+                        </div>
+                      </div>
+                      
+                      <div class="row mx-2 pb-3">
+                        <div class="col">
+                          <p class="fst-italic">Please review carefully each information 
+                            before adding Course!</p>
+                        </div>
+                        <div class="col d-flex flex-row-reverse">
+                          <button type="submit" class="btn btn-primary">Add Department</button>
+                          <button type="clear" class="btn btn-secondary mx-2">Clear</button> 
+                        </div>
+                      </div>
+                    </form>
+                </div>
+              </div>
 
               <div class="container-box shadow text-sm-start bg-white rounded-4 mx-3 mt-4 mb-5 mx-auto-lg">
-                  <h4 class="bg-info text-light text-center py-2 rounded-top-4">All Student</h4>
-                  <div class="container pb-3">
-                          <table class="table display" id="myTable">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Year</th>
-                                <th scope="col">Course</th>
-                                <th scope="col">Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody id="tbl-container">
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>1091010040</td>
-                                <td>Mak Bert</td>
-                                <td>Ganacias</td>
-                                <td>4th</td>
-                                <td>BSIT</td>
-                                <td>
-                                  <button type="button" class="deletestdnt btn btn-warning rounded-4">
-                                    <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
-                                    <i class="bi bi-person-rolodex text-dark "></i></a>
-                                  </button>
-                                  <button type="button" class="deletestdnt btn btn-secondary rounded-4">
-                                  <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                                  <i class="bi bi-trash3 text-light"></i></a>
-                                  </button>
-                                </td>
+                <h4 class="bg-info text-light text-center py-2 rounded-top-4">All Departments</h4>
+                <div class="container pb-3">
+                        <table class="table display" id="myTable">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Code</th>
+                              <th scope="col">TItle</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tbl-container">
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>IT</td>
+                              <td>Information Technology</td>
+                               <td>
+                                <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                                  <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
+                                  <i class="bi bi-folder text-dark "></i></a>
+                                </button>
+                                <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                                <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                                <i class="bi bi-trash3 text-light"></i></a>
+                                </button>
+                              </td>
                                 
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>1091010040</td>
-                                <td>Ralph</td>
-                                <td>Bernas</td>
-                                <td>4th</td>
-                                <td>BSIT</td>
-                                <td>
-                                  <button type="button" class="deletestdnt btn btn-warning rounded-4">
-                                    <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
-                                    <i class="bi bi-person-rolodex text-dark "></i></a>
-                                  </button>
-                                  <button type="button" class="deletestdnt btn btn-secondary rounded-4">
-                                  <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                                  <i class="bi bi-trash3 text-light"></i></a>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>1091010040</td>
-                                <td>JJared</td>
-                                <td>Lim</td>
-                                <td>4th</td>
-                                <td>BSIT</td>
-                                <td>
-                                  <button type="button" class="deletestdnt btn btn-warning rounded-4">
-                                    <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
-                                    <i class="bi bi-person-rolodex text-dark "></i></a>
-                                  </button>
-                                  <button type="button" class="deletestdnt btn btn-secondary rounded-4">
-                                  <a href="" class="" data-bs-toggle="modal" data-bs-target="">
-                                  <i class="bi bi-trash3 text-light"></i></a>
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                  </div>
-              </div>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>ECT</td>
+                              <td>Electronics & Computer Technology</td>
+                               <td>
+                                <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                                  <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
+                                  <i class="bi bi-folder text-dark "></i></a>
+                                </button>
+                                <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                                <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                                <i class="bi bi-trash3 text-light"></i></a>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>EDUC</td>
+                              <td>Education</td>
+                               <td>
+                                <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                                  <a href="teachstdntprofile.html" class="" data-bs-toggle="" data-bs-target="">
+                                  <i class="bi bi-folder text-dark "></i></a>
+                                </button>
+                                <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                                <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                                <i class="bi bi-trash3 text-light"></i></a>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                </div>
+            </div>
       </div>    
 
 

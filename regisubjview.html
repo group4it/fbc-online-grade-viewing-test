@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullbright College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar text-center text-sm-start">
+    <img src="img/logo.png" alt="" class="logo-sm px-2" id="logostdntprofile">
+    <h1 class="logo-name fs-3">Fullbright College</h1>
+    <div class="bar dropdown ms-auto">
+        <button class="navbar-toggler d-md-none" 
+        type="button" 
+        data-bs-toggle="dropdown" 
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <ul class="dropdown-menu dropdown-menu-end rounded-3 fs-6 py-3">
+                <li class=""><a href="teachclass.html" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-arrow-left-square"></i></i> Back</a></li>
+                <li class=""><a href="teacheracc.html" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-house-door"></i></i> Dashboard</a></li>
+                <li class=""><a href="teachmyprofile.html" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-person"></i> My Profile</a></li>
+                <li class=""><a href="teachmyclasses.html" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-person-video3"></i> My Classes</a></li>
+                <li class=""><a href="index.html" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
+                <li class=""><a href="teachhelpin" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-question-diamond"></i> Help</a></li>
+                <li class=""><a href="teachsettings.html" class="dropdown-item text-decoration-none ps-4 px-5 py-3"><i class="bi bi-gear"></i> Settings</a></li>
+            </ul>
+    </div>
+    
+
+    <div class="topcornerdpd dropdown ms-auto">
+        <button type="button" class="addclasses btn btn-primary">
+          <a href="regisubjects.html" class="text-light text-decoration-none" data-bs-toggle="" data-bs-target="">
+          <i class="bi bi-arrow-left-square"></i> Back</a>
+        </button>
+        <button class="btn btn-clear dropdown-toggle fs-5" 
+        type="button" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false"
+        >
+        <i class="bi bi-person-circle"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="teachmyprofile.html"><i class="bi bi-person"></i> My Profile</a></li>
+          <li><a class="dropdown-item" href="index.html"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
+          <li><a class="dropdown-item" href="teachhelpin"><i class="bi bi-question-diamond"></i> Help</a></li>
+          <li><a class="dropdown-item" href="teachsettings.html"><i class="bi bi-gear"></i> Settings</a></li>
+        </ul>
+    </div>
+  </div>
+    <div class="container-main text-center text-sm-start" id="conteachclasstdnprofile">
+        <div class="content m-0">
+            <div class="container text-center px-5">
+                <div class="row">
+                  <div class="col px-0">
+                    <h1 class="d-flex"><i class="bi bi-book-fill"></i><Span class="fs-1 mx-2">Subject Information</Span></h1>
+                  </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+              <div class="content d-flex pt-2 mx-auto">
+                  <div class="location text-secondary px-5 d-flex">
+                    <h6><a href="regisubjects.html" class="text-decoration-none text-secondary">Subjects/</a></h6>
+                    <h6><a href="regisubjview.html" class="text-decoration-none text-primary"> Subject Info/</a></h6>
+                  </div>
+              </div>
+              <hr>
+            
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex mx-sm-auto">
+                  <div class="info-lables col-3 text-start text-secondary-emphasis">
+                    <h6>Curriculum No.:</h6>
+                    <h6>Code:</h6>
+                    <h6>Title:</h6>
+                    <h6>Description:</h6>
+                    <h6>Units:</h6>
+                </div>
+                <div class="info-lables col col text-start text-black">
+                    <h6 id="">1999</h6>
+                    <h6 id="">SYSIN2</h6>
+                    <h6 id="">Systems Integrated</h6>
+                    <h6 id="">to follow</h6>
+                    <h6 id="">3</h6>
+                </div>
+                </div>
+                
+        <!-- </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">ID</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Grading</th>
+                      <th scope="col">Profile</th>
+                      <th scope="col">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbl-container">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>1091010040</td>
+                      <td>Mak Bert</td>
+                      <td>Ganacias</td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-primary rounded-4">
+                          <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                          <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                          </button>
+                      </td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                          <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                          <i class="bi bi-person-rolodex text-dark "></i></a>
+                          </button>
+                      </td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-trash3 text-light"></i></a>
+                        </button>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>1091010040</td>
+                      <td>Ralph</td>
+                      <td>Bernas</td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-primary rounded-4">
+                          <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                          <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                          </button>
+                      </td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                          <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                          <i class="bi bi-person-rolodex text-dark "></i></a>
+                          </button>
+                      </td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                        <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-trash3 text-light"></i></a>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>1091010040</td>
+                      <td>JJared</td>
+                      <td>Lim</td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-primary rounded-4">
+                          <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                          <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                          </button>
+                      </td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                          <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                          <i class="bi bi-person-rolodex text-dark "></i></a>
+                          </button>
+                      </td>
+                      <td>
+                        <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                        <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-trash3 text-light"></i></a>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> -->
+          </div>
+    </div>
+
+    <!-- Successfully deleted modal -->
+
+    <div class="modal pt-5" id="classdltd" tabindex="-1">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content rounded-4 mt-5">
+          <div class="modal-body">
+              <img class="chkpic position-absolute top-0 start-50 translate-middle fs-5" src="img/check.png" alt="">
+              <div class="text-center mt-5">
+                  <p>The class has been successfully deleted!</p>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><span class="mx-5">OK</span></button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- Are you sure? MODAL -->
+
+    <div class="modal pt-5" id="areYouSure" tabindex="-1">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="chkpic position-absolute top-0 start-50 translate-middle fs-5" src="img/warning.png" alt="">
+              <div class="text-center mt-5">
+                  <h1>Warning!</h1>
+                  <p>Your about to delete this class!<br>Are you sure you want to delete this class?</p>
+                  <div class="mt-3">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="mx-5">No</span></button>
+                    <button id="yesdlt" type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-target=""><span class="mx-5">Yes</span></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Successfully added modal -->
+
+    <div class="modal pt-5" id="Successful" tabindex="-1">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content rounded-4 mt-5">
+          <div class="modal-body">
+              <img class="chkpic position-absolute top-0 start-50 translate-middle fs-5" src="img/check.png" alt="">
+              <div class="text-center mt-5">
+                  <h1>Great!</h1>
+                  <p>Student has been successfully<br>added to your class!</p>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><span class="mx-5">OK</span></button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+
+    <!--ADD STUDENT MODAL-->
+
+    <div class="modal fade" id="adstdnt" tabindex="-1">
+      <div class="modal-dialog">
+          <div class="modal-content" id="adstdnt-modal-dialog">
+              <div class="modal-header bg-primary text-light">
+                  <div class="container text-center">
+                      <div class="row">
+                        <div class="addicon col">
+                          <h1 class="d-flex"><i class="bi bi-person-rolodex fs-2"></i><i class="bi bi-plus-circle-fill fs-6"></i><span class="fs-2">Add Student</span></h1>
+                        </div>
+                      </div>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <form id="card-form">
+                            <div class="mb-3">
+                              <label for="card-code" class="form-label">Identification No.</label>
+                              <input type="number" class="form-control" id="idno" name="IDnumber" required>
+                            </div>
+
+                            <div class="mb-3">
+                              <table class="d-flex">
+                                <thread>
+                                  <tr class="adstdntlabes row form-label text-secondary">
+                                    <th>First Name:</th>
+                                    <th>Middle Name:</th>
+                                    <th>Last Name:</th>
+                                    <th>Date of Birth:</th>
+                                    <th>Course:</th>
+                                    <th>Section:</th>
+                                  </tr>
+                                </thread>
+                                <tbody id="stdnInfo">
+                                  <tr class="row text-dark" id="tblcontainer">
+                                    <td id="firstname">sample</td>
+                                    <td id="middlename">sample</td>
+                                    <td id="lastname">sample</td>
+                                    <td id="dob">sample</td>
+                                    <td id="course">sample</td>
+                                    <td id="section">sample</td>
+                                  </tr>
+                                </tbody> 
+                              </table>
+                            </div>
+                            <h7 class="fst-italic fs-6 text-secondary">Please review all information before adding the student.</h7>
+                            <br>
+                            <div class="press d-flex flex-row-reverse mt-4 mb-2">
+                              <button type="submit" class="btn btn-primary fs-5"><span class="mx-2">Add</span></button>
+                              <button type="button" class="btn btn-info mx-2 fs-5" data-bs-dismiss="modal"><span class="mx-2 text-light">Cancel</span></button>
+                            </div>
+                          </form>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>  
+
+
+      <script>
+        // Get the card form and card container
+        const cardForm = document.querySelector('#card-form');
+        const tblContainer = document.querySelector('#tbl-container');
+
+        // Add an event listener to the card form submission
+        cardForm.addEventListener('submit', (e) => {
+        // Prevent the default form submission behavior
+        e.preventDefault();
+
+        // Get the values from the card form
+        const cellNumber = cardForm['idno'].value;
+        const cellFirstName = cardForm['firstname'].value;
+        const cellLastName = cardForm['lastname'].value;
+
+        // Generate the card HTML with the input values
+        const tblrowHTML = `
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>${cellNumber}</td>
+                    <td>${cellFirstName}</td>
+                    <td>${cellLastName}</td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-primary rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-pencil-square text-light"><i class="bi bi-plus-lg"></i></i></a>
+                        </button>
+                    </td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-warning rounded-4">
+                        <a href="" class="" data-bs-toggle="modal" data-bs-target="">
+                        <i class="bi bi-person-rolodex text-dark "></i></a>
+                        </button>
+                    </td>
+                    <td>
+                      <button type="button" class="deletestdnt btn btn-secondary rounded-4">
+                      <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="">
+                      <i class="bi bi-trash3 text-light"></i></a>
+                      </button>
+                    </td>
+                  </tr>
+        `
+        ;
+
+        // Clear the card form input values
+        cardForm.reset();
+        
+
+        // Add the generated card HTML to the card container
+        tblContainer.insertAdjacentHTML('beforeend', tblrowHTML);
+
+        
+        // Close the modal
+        $('#adstdnt').modal('hide').on('hidden.bs.modal', function(){
+           
+          $('#Successful').modal('show');
+            });
+       
+        });
+     
+     
+      </script>
+      <script>
+        // Get the delete class button element 
+        const deleteBtn = document.querySelector('#delete-btn');
+
+        // Add a click event listener to the delete button
+        deleteBtn.addEventListener('click', function() {
+          
+          // Show the warning modal
+          const areYouSureModal = document.querySelector('#areYouSure');
+          const modalInstance = new bootstrap.Modal(areYouSureModal);
+          modalInstance.show();
+
+          // Add a click event listener to the 'Yes' button in the warning modal
+          const yesBtn = document.querySelector('#yesdlt');
+          yesBtn.addEventListener('click', function() {
+            // Close the warning modal
+            modalInstance.hide();
+
+            // Show the congratulations modal
+            const congratulationsModal = document.querySelector('#classdltd');
+            const congratulationsModalInstance = new bootstrap.Modal(congratulationsModal);
+            congratulationsModalInstance.show();
+
+            // Add a delay to the congratulations modal before closing it
+            setTimeout(function() {
+              congratulationsModalInstance.hide();
+            }, 2000);
+          });
+        });
+      </script>
+</body>
+</html>
